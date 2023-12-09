@@ -87,4 +87,39 @@
     font-weight: 800;
     src: url('../fonts/montserrat-v26-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+  }
+
+img {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor; 
+    /* img rendering css to Jeremiah Johnson aka Nullsleep via 
+    https://web.archive.org/web/20230531045829/https://nullsleep.tumblr.com/post/16417178705/how-to-disable-image-smoothing-in-modern-web*/
+}
+
+body {
+    background-color: #fff7f5;
+    background-image: url("images/bg.png");
+    background-size: 100%;
+    background-repeat: repeat;
+
+    color: #30201b;
+    text-align:left;
+    font-family: "Montserrat", Garamond, serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.25;
+
+    overflow-x: hidden;
+    min-height: calc(100vh - 4.5em);;
+    display: flex;
+    flex-direction: column;
+}
