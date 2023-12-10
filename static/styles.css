@@ -160,3 +160,22 @@ a, sup {
   padding-bottom: 1em;
   
 }
+
+#bibliography {
+    background-color:#fdf9f8;
+        background-clip: padding-box;
+
+        border: solid #473b37 medium;
+        border-image: url("images/SingleBorder.png") 50 round;
+        border-width: 0.75em;
+}
+
+.section {
+
+  background-clip: padding-box;
+  padding: 0.25%;
+
+  border: solid #473b37 medium;
+  border-image: url("images/SingleBorder.png") 50 round;
+  border-width: 0.75em;
+}
